@@ -1,0 +1,162 @@
+CRITICAL - 2022-09-19 11:49:35 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:50:08 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:50:17 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:50:36 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:51:48 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:53:01 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:54:11 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:55:04 --> Call to a member function destroy() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:55:38 --> Call to a member function destroy() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:55:39 --> Call to a member function destroy() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:57:30 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:57:32 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 11:59:07 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 12:01:38 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 12:01:39 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 12:01:40 --> Call to a member function contents() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->cek()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 12:36:15 --> Invalid argument supplied for foreach()
+#0 /Applications/MAMP/htdocs/kasir/app/Views/transaksi/kasir.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/Applications/M...', 111, Array)
+#1 /Applications/MAMP/htdocs/kasir/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/kasir', Array, true)
+#4 /Applications/MAMP/htdocs/kasir/app/Controllers/Transaksi.php(32): view('transaksi/kasir', Array)
+#5 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->kasir()
+#6 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-19 12:36:39 --> Invalid argument supplied for foreach()
+#0 /Applications/MAMP/htdocs/kasir/app/Views/transaksi/kasir.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/Applications/M...', 111, Array)
+#1 /Applications/MAMP/htdocs/kasir/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/kasir', Array, true)
+#4 /Applications/MAMP/htdocs/kasir/app/Controllers/Transaksi.php(32): view('transaksi/kasir', Array)
+#5 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->kasir()
+#6 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-19 16:57:16 --> Call to a member function contens() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->prosesBayar()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 22:53:43 --> Cannot use [] for reading
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->prosesBayar()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 23:06:18 --> Call to a member function total() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->kasir()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 23:06:33 --> Call to a member function total() on null
+#0 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->kasir()
+#1 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#2 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-19 23:07:50 --> Call to a member function total() on null
+#0 /Applications/MAMP/htdocs/kasir/system/View/View.php(220): include()
+#1 /Applications/MAMP/htdocs/kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/kasir', Array, true)
+#3 /Applications/MAMP/htdocs/kasir/app/Controllers/Transaksi.php(32): view('transaksi/kasir', Array)
+#4 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->kasir()
+#5 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#6 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-09-19 23:07:53 --> Call to a member function total() on null
+#0 /Applications/MAMP/htdocs/kasir/system/View/View.php(220): include()
+#1 /Applications/MAMP/htdocs/kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/kasir', Array, true)
+#3 /Applications/MAMP/htdocs/kasir/app/Controllers/Transaksi.php(32): view('transaksi/kasir', Array)
+#4 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->kasir()
+#5 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#6 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#8 {main}

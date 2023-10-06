@@ -1,0 +1,242 @@
+CRITICAL - 2022-11-23 00:01:19 --> Invalid file: setting/adduser.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/adduser...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/adduser', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(166): view('setting/adduser', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->adduser()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-23 00:14:18 --> Call to a member function hasError() on null
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(220): include()
+#1 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/edit_us...', Array, true)
+#3 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(246): view('setting/edit_us...', Array)
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user()
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-11-23 00:23:38 --> mysqli_sql_exception: Unknown column 'b.role_id' in 'on clause' in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('17')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('17')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 00:23:38 --> Unknown column 'b.role_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('17')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('17')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-23 00:23:46 --> mysqli_sql_exception: Unknown column 'b.role_id' in 'on clause' in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('17')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('17')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 00:23:46 --> Unknown column 'b.role_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('17')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('17')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-23 00:24:20 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('16')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('16')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 00:24:20 --> Column 'id' in where clause is ambiguous
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('16')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('16')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-23 00:27:13 --> mysqli_sql_exception: Unknown column 'b' in 'from clause' in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('16')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('16')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 00:27:13 --> Unknown column 'b' in 'from clause'
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('16')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('16')
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-23 00:29:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(238): App\Models\getModel->getUserById('17')
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user('17')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-23 00:44:52 --> Too few arguments to function App\Controllers\Pengaturan::edit_user(), 0 passed in /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user()
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-23 00:47:09 --> Too few arguments to function App\Controllers\Pengaturan::edit_user(), 0 passed in /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_user()
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-23 01:38:39 --> Too few arguments to function App\Controllers\Pengaturan::roleaccess(), 0 passed in /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->roleaccess()
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-11-23 02:06:03 --> mysqli_sql_exception: Column 'role_id' cannot be null in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access('2')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-23 02:06:03 --> Column 'role_id' cannot be null
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access('2')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-23 02:08:23 --> mysqli_sql_exception: Column 'role_id' cannot be null in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-23 02:08:23 --> Column 'role_id' cannot be null
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-23 02:09:50 --> mysqli_sql_exception: Column 'role_id' cannot be null in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-23 02:09:50 --> Column 'role_id' cannot be null
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-23 02:10:30 --> mysqli_sql_exception: Column 'role_id' cannot be null in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access('2')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-23 02:10:30 --> Column 'role_id' cannot be null
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(398): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->change_access('2')
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-23 02:39:11 --> Call to a member function update() on null
+#0 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Profil->update_profil()
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}

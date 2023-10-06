@@ -1,0 +1,131 @@
+CRITICAL - 2022-11-22 21:12:48 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(96): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 21:14:27 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(98): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 21:16:39 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(98): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 21:16:52 --> Trying to get property 'image' of non-object
+#0 /Applications/MAMP/htdocs/e-kasir/app/Views/layout.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Applications/M...', 40, Array)
+#1 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(236): CodeIgniter\View\View->render('layout', Array, true)
+#4 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('pengeluaran/daf...', Array, true)
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(29): view('pengeluaran/daf...', Array)
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->index()
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-22 21:17:35 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(98): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 21:21:58 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(98): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 21:25:02 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(98): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 21:25:48 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php on line 13
+#0 /Applications/MAMP/htdocs/e-kasir/app/Models/updateModel.php(13): CodeIgniter\Database\BaseBuilder->update('4')
+#1 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(98): App\Models\updateModel->updatePengeluaran(Array, '4')
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->update_pengeluaran()
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-22 22:01:54 --> Too few arguments to function App\Controllers\Produk::edit_produk(), 0 passed in /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Produk->edit_produk()
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-22 23:08:08 --> Invalid argument supplied for foreach()
+#0 /Applications/MAMP/htdocs/e-kasir/app/Views/setting/modaltambahuser.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/Applications/M...', 25, Array)
+#1 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/modalta...', Array, true)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(160): view('setting/modalta...')
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->tambah_user()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-22 23:08:55 --> Invalid argument supplied for foreach()
+#0 /Applications/MAMP/htdocs/e-kasir/app/Views/setting/modaltambahuser.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/Applications/M...', 25, Array)
+#1 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/modalta...', Array, true)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(160): view('setting/modalta...')
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->tambah_user()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-22 23:20:43 --> Cannot use object of type stdClass as array
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(220): include()
+#1 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/adduser', Array, true)
+#3 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(166): view('setting/adduser', Array)
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->adduser()
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-11-22 23:26:08 --> mysqli_sql_exception: Column 'is_active' cannot be null in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/insertModel.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(215): App\Models\insertModel->insertUser(Array)
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->saveuser()
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-22 23:26:08 --> Column 'is_active' cannot be null
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `us...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /Applications/MAMP/htdocs/e-kasir/app/Models/insertModel.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(215): App\Models\insertModel->insertUser(Array)
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->saveuser()
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#8 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}

@@ -1,0 +1,9 @@
+CRITICAL - 2022-09-21 03:41:48 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/kasir/system/Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/kasir/system/Model.php(834): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/kasir/app/Controllers/Transaksi.php(86): CodeIgniter\Model->__call('cekStok', Array)
+#3 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(936): App\Controllers\Transaksi->addCart()
+#4 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#5 /Applications/MAMP/htdocs/kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}

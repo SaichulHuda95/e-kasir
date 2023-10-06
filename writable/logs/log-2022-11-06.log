@@ -1,0 +1,42 @@
+CRITICAL - 2022-11-06 01:35:43 --> Invalid file: setting/.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/.php')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(28): view('setting/', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->index()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 03:50:22 --> Invalid file: setting/modaltambahkategori.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/modalta...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/modalta...', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengaturan.php(37): view('setting/modalta...')
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->add_category()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 04:17:41 --> Cannot use object of type stdClass as array
+#0 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_kategori()
+#1 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#2 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-06 04:55:38 --> Invalid file: setting/modaleditpengeluaran.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/modaled...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/modaled...', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(78): view('setting/modaled...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->edit()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-06 04:58:02 --> Invalid file: setting/modaleditpengeluaran.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/modaled...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('setting/modaled...', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Pengeluaran.php(78): view('setting/modaled...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Pengeluaran->edit()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}

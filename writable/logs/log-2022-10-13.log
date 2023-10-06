@@ -1,0 +1,27 @@
+CRITICAL - 2022-10-13 15:54:44 --> Invalid file: transaksi/modalpembayaran.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi/modal...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/modal...', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Kasir.php(121): view('transaksi/modal...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Kasir->pembayaran()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-13 15:54:47 --> Invalid file: transaksi/modalpembayaran.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi/modal...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/modal...', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Kasir.php(121): view('transaksi/modal...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Kasir->pembayaran()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-13 15:54:58 --> Invalid file: transaksi/modalpembayaran.php
+#0 /Applications/MAMP/htdocs/e-kasir/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi/modal...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Common.php(1217): CodeIgniter\View\View->render('transaksi/modal...', Array, true)
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Kasir.php(121): view('transaksi/modal...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Kasir->pembayaran()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
