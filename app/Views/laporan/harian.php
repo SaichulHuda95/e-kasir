@@ -8,52 +8,114 @@
     <div class="col">
         <div class="card card-outline card-primary">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group row">
-                            <label for="tgl_laporan" class="col-sm-5 col-form-label col-form-label-sm">Tanggal</label>
-                            <div class="col-sm-7">
-                                <input type="date" class="form-control form-control-sm" name="tgl_laporan" id="tgl_laporan">
+                <ul class="nav nav-pills" id="myTab3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pemasukan-tab3" data-toggle="tab" href="#pemasukan" role="tab" aria-controls="pemasukan" aria-selected="true">Pemasukan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pengeluaran-tab3" data-toggle="tab" href="#pengeluaran" role="tab" aria-controls="pengeluaran" aria-selected="false">Pengeluaran</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="pemasukan" role="tabpanel" aria-labelledby="pemasukan-tab3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                    <label for="tgl_laporan" class="col-sm-5 col-form-label col-form-label-sm">Tanggal</label>
+                                    <div class="col-sm-7">
+                                        <input type="date" class="form-control form-control-sm" name="tgl_laporan" id="tgl_laporan">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-sm btn-primary" id="btn_cari" onclick="get_laporan_harian()">Cari</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table id="datatable" class="table table-sm table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Tanggal</th>
+                                                <th>Kode Produk</th>
+                                                <th>Nama Produk</th>
+                                                <th>Harga</th>
+                                                <th>Qty</th>
+                                                <th>Total Harga</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-sm btn-primary" id="btn_cari" onclick="get_laporan_harian()">Cari</button>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="table-responsive">
-                            <table id="datatable" class="table table-sm table-hover" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>Tanggal</th>
-                                        <th>Kode Produk</th>
-                                        <th>Nama Produk</th>
-                                        <th>Harga</th>
-                                        <th>Stok</th>
-                                        <th>Total Harga</th>
-                                    </tr>
-                                </thead>
+                    <div class="tab-pane fade" id="pengeluaran" role="tabpanel" aria-labelledby="pengeluaran-tab3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                    <label for="tgl_laporan" class="col-sm-5 col-form-label col-form-label-sm">Tanggal</label>
+                                    <div class="col-sm-7">
+                                        <input type="date" class="form-control form-control-sm" name="tgl_laporan" id="tgl_laporan">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-sm btn-primary" id="btn_cari" onclick="get_laporan_harian()">Cari</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table id="datatable" class="table table-sm table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Tanggal</th>
+                                                <th>Kode Produk</th>
+                                                <th>Nama Produk</th>
+                                                <th>Harga</th>
+                                                <th>Qty</th>
+                                                <th>Total Harga</th>
+                                            </tr>
+                                        </thead>
 
-                                <tbody>
+                                        <tbody>
 
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -114,13 +176,6 @@
                 {
                     extend: 'print',
                     footer: true,
-                },
-                {
-                    extend: 'pdfHtml5',
-                    footer: true,
-                    orientation: 'portrait',
-                    pageSize: 'A4',
-                    download: 'open'
                 }
             ],
             "language": {

@@ -19,9 +19,19 @@
     <script src="<?= base_url() ?>/assets/plugins/jquery/jquery.min.js"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/mycustom.css">
+
+    <style>
+        body {
+            background-image: url(assets/img/bg_login.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
-<body style="background: rgb(2,0,36); background: radial-gradient(circle, rgba(2,0,36,1)0%, rgba(9,9,121,1) 34%, rgba(0,212,255,1) 86%);">
+<body>
     <div id="app">
 
         <?= $this->renderSection('login-page'); ?>
@@ -33,7 +43,6 @@
     <script src="<?= base_url() ?>/assets/js/stisla.js"></script>
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/assets/js/scripts.js"></script>
-    <script src="<?= base_url() ?>/assets/js/custom.js"></script>
     <!-- SwweetAlert -->
     <script src="<?= base_url() ?>/assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
     <!-- custom js -->

@@ -8,71 +8,154 @@
     <div class="col">
         <div class="card card-outline card-primary">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group row">
-                            <label for="bln_laporan" class="col-sm-5 col-form-label col-form-label-sm">Bulan</label>
-                            <div class="col-sm-7">
-                                <select class="form-control form-control-sm" name="bln_laporan" id="bln_laporan">
-                                    <option value="all">-Semua-</option>
-                                    <option value="1">Januari</option>
-                                    <option value="2">Februari</option>
-                                    <option value="3">Maret</option>
-                                    <option value="4">April</option>
-                                    <option value="5">Mei</option>
-                                    <option value="6">Juni</option>
-                                    <option value="7">Juli</option>
-                                    <option value="8">Agustus</option>
-                                    <option value="9">September</option>
-                                    <option value="10">Oktober</option>
-                                    <option value="11">November</option>
-                                    <option value="12">Desember</option>
-                                </select>
+                <ul class="nav nav-pills" id="myTab3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pemasukan-tab3" data-toggle="tab" href="#pemasukan" role="tab" aria-controls="pemasukan" aria-selected="true">Pemasukan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pengeluaran-tab3" data-toggle="tab" href="#pengeluaran" role="tab" aria-controls="pengeluaran" aria-selected="false">Pengeluaran</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="pemasukan" role="tabpanel" aria-labelledby="pemasukan-tab3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                    <label for="bln_laporan" class="col-sm-5 col-form-label col-form-label-sm">Bulan</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control form-control-sm" name="bln_laporan" id="bln_laporan">
+                                            <option value="all">-Semua-</option>
+                                            <option value="1">Januari</option>
+                                            <option value="2">Februari</option>
+                                            <option value="3">Maret</option>
+                                            <option value="4">April</option>
+                                            <option value="5">Mei</option>
+                                            <option value="6">Juni</option>
+                                            <option value="7">Juli</option>
+                                            <option value="8">Agustus</option>
+                                            <option value="9">September</option>
+                                            <option value="10">Oktober</option>
+                                            <option value="11">November</option>
+                                            <option value="12">Desember</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                    <label for="thn_laporan" class="col-sm-5 col-form-label col-form-label-sm">Tahun</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="thn_laporan" id="thn_laporan" value="<?= date('Y') ?>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-primary" id="btn_cari" onclick="get_laporan_harian()">Cari</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table id="datatable" class="table table-sm table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Tanggal</th>
+                                                <th>Kode Produk</th>
+                                                <th>Nama Produk</th>
+                                                <th>Harga</th>
+                                                <th>Qty</th>
+                                                <th>Total Harga</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="form-group row">
-                            <label for="thn_laporan" class="col-sm-5 col-form-label col-form-label-sm">Tahun</label>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" name="thn_laporan" id="thn_laporan" value="<?= date('Y') ?>">
+
+                    <div class="tab-pane fade" id="pengeluaran" role="tabpanel" aria-labelledby="pengeluaran-tab3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                    <label for="bln_laporan" class="col-sm-5 col-form-label col-form-label-sm">Bulannn</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control form-control-sm" name="bln_laporan" id="bln_laporan">
+                                            <option value="all">-Semua-</option>
+                                            <option value="1">Januari</option>
+                                            <option value="2">Februari</option>
+                                            <option value="3">Maret</option>
+                                            <option value="4">April</option>
+                                            <option value="5">Mei</option>
+                                            <option value="6">Juni</option>
+                                            <option value="7">Juli</option>
+                                            <option value="8">Agustus</option>
+                                            <option value="9">September</option>
+                                            <option value="10">Oktober</option>
+                                            <option value="11">November</option>
+                                            <option value="12">Desember</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                    <label for="thn_laporan" class="col-sm-5 col-form-label col-form-label-sm">Tahun</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="thn_laporan" id="thn_laporan" value="<?= date('Y') ?>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-primary" id="btn_cari" onclick="get_laporan_harian()">Cari</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-sm btn-primary" id="btn_cari" onclick="get_laporan_harian()">Cari</button>
-                    </div>
-                </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table id="datatable" class="table table-sm table-hover" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Tanggal</th>
+                                                <th>Kode Produk</th>
+                                                <th>Nama Produk</th>
+                                                <th>Harga</th>
+                                                <th>Stok</th>
+                                                <th>Total Harga</th>
+                                            </tr>
+                                        </thead>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="table-responsive">
-                            <table id="datatable" class="table table-sm table-hover" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>Tanggal</th>
-                                        <th>Kode Produk</th>
-                                        <th>Nama Produk</th>
-                                        <th>Harga</th>
-                                        <th>Stok</th>
-                                        <th>Total Harga</th>
-                                    </tr>
-                                </thead>
+                                        <tbody>
 
-                                <tbody>
-
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,13 +219,6 @@
                 {
                     extend: 'print',
                     footer: true,
-                },
-                {
-                    extend: 'pdfHtml5',
-                    footer: true,
-                    orientation: 'portrait',
-                    pageSize: 'A4',
-                    download: 'open'
                 }
             ],
             "language": {
