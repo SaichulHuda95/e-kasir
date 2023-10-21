@@ -218,34 +218,68 @@ class getModel extends Model
         return $query;
     }
 
-    public function getLaporanHarian($tgl_laporan)
+    public function getLaporanPemasukanHarian($tgl_laporan)
     {
-        $builder = $this->db->table('tbl_jual_detil');
-        $builder->join('tbl_produk', 'tbl_jual_detil.kode_produk=tbl_produk.kode_produk');
-        $builder->join('tbl_jual', 'tbl_jual_detil.no_faktur=tbl_jual.no_faktur');
-        $builder->where('tgl_jual', $tgl_laporan);
-        $query = $builder->get()->getResult();
+        $sql = "SELECT DATE_FORMAT(tgl_jual, '%d/%m/%Y') AS tgl_jual, a.kode_produk, a.harga_jual, a.qty, a.total_harga, b.nama_produk FROM tbl_jual_detil AS a
+                LEFT JOIN tbl_produk AS b ON a.kode_produk=b.kode_produk
+                LEFT JOIN tbl_jual AS c ON a.no_faktur=c.no_faktur
+                WHERE c.tgl_jual = '$tgl_laporan'
+                ORDER BY tgl_jual ASC";
+        $builder = db_connect()->query($sql);
+        $query = $builder->getResult();
         return $query;
     }
 
-    public function getLaporanBulananAll($thn_laporan)
+    public function getLaporanPengeluaranHarian($tgl_laporan)
     {
-        $builder = $this->db->table('tbl_jual_detil');
-        $builder->join('tbl_produk', 'tbl_jual_detil.kode_produk=tbl_produk.kode_produk');
-        $builder->join('tbl_jual', 'tbl_jual_detil.no_faktur=tbl_jual.no_faktur');
-        $builder->where('YEAR(tgl_jual)', $thn_laporan);
-        $query = $builder->get()->getResult();
+        $sql = "SELECT DATE_FORMAT(created_at, '%d/%m/%Y') AS tgl_pengeluaran, nama_produk, jumlah_produk, harga_produk, jumlah_pengeluaran FROM tbl_pengeluaran
+                WHERE created_at = '$tgl_laporan'";
+        $builder = db_connect()->query($sql);
+        $query = $builder->getResult();
         return $query;
     }
 
-    public function getLaporanBulanan($bln_laporan, $thn_laporan)
+    public function getLaporanPemasukanBulananAll($thn_laporan)
     {
-        $builder = $this->db->table('tbl_jual_detil');
-        $builder->join('tbl_produk', 'tbl_jual_detil.kode_produk=tbl_produk.kode_produk');
-        $builder->join('tbl_jual', 'tbl_jual_detil.no_faktur=tbl_jual.no_faktur');
-        $builder->where('MONTH(tgl_jual)', $bln_laporan);
-        $builder->where('YEAR(tgl_jual)', $thn_laporan);
-        $query = $builder->get()->getResult();
+        $sql = "SELECT DATE_FORMAT(tgl_jual, '%d/%m/%Y') AS tgl_jual, a.kode_produk, a.harga_jual, a.qty, a.total_harga, b.nama_produk FROM tbl_jual_detil AS a
+                LEFT JOIN tbl_produk AS b ON a.kode_produk=b.kode_produk
+                LEFT JOIN tbl_jual AS c ON a.no_faktur=c.no_faktur
+                WHERE YEAR(tgl_jual) = '$thn_laporan'
+                ORDER BY tgl_jual ASC";
+        $builder = db_connect()->query($sql);
+        $query = $builder->getResult();
+        return $query;
+    }
+
+    public function getLaporanPemasukanBulanan($bln_laporan, $thn_laporan)
+    {
+        $sql = "SELECT DATE_FORMAT(tgl_jual, '%d/%m/%Y') AS tgl_jual, a.kode_produk, a.harga_jual, a.qty, a.total_harga, b.nama_produk FROM tbl_jual_detil AS a
+                LEFT JOIN tbl_produk AS b ON a.kode_produk=b.kode_produk
+                LEFT JOIN tbl_jual AS c ON a.no_faktur=c.no_faktur
+                WHERE MONTH(tgl_jual) = '$bln_laporan'
+                AND YEAR(tgl_jual) = '$thn_laporan'
+                ORDER BY tgl_jual ASC";
+        $builder = db_connect()->query($sql);
+        $query = $builder->getResult();
+        return $query;
+    }
+
+    public function getLaporanPengeluaranBulananAll($thn_laporan)
+    {
+        $sql = "SELECT DATE_FORMAT(created_at, '%d/%m/%Y') AS tgl_pengeluaran, nama_produk, jumlah_produk, harga_produk, jumlah_pengeluaran FROM tbl_pengeluaran
+                WHERE YEAR(created_at) = '$thn_laporan'";
+        $builder = db_connect()->query($sql);
+        $query = $builder->getResult();
+        return $query;
+    }
+
+    public function getLaporanPengeluaranBulanan($bln_laporan, $thn_laporan)
+    {
+        $sql = "SELECT DATE_FORMAT(created_at, '%d/%m/%Y') AS tgl_pengeluaran, nama_produk, jumlah_produk, harga_produk, jumlah_pengeluaran FROM tbl_pengeluaran
+                WHERE MONTH(created_at) = '$bln_laporan'
+                AND YEAR(created_at) = '$thn_laporan'";
+        $builder = db_connect()->query($sql);
+        $query = $builder->getResult();
         return $query;
     }
 

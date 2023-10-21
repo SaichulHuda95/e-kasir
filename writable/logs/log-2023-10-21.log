@@ -1,0 +1,64 @@
+ERROR - 2023-10-21 12:25:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE YEAR(tgl_jual) = '2023'' at line 5 in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DATE_FOR...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(259): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Laporan.php(66): App\Models\getModel->getLaporanBulanan('3', '2023')
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Laporan->get_laporan_bulanan()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-21 12:25:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE YEAR(tgl_jual) = '2023'' at line 5
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DATE_FOR...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(259): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Laporan.php(66): App\Models\getModel->getLaporanBulanan('3', '2023')
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Laporan->get_laporan_bulanan()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-10-21 12:27:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER_BY tgl_jual ASC' at line 5 in /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DATE_FOR...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(248): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Laporan.php(64): App\Models\getModel->getLaporanBulananAll('2023')
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Laporan->get_laporan_bulanan()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-21 12:27:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER_BY tgl_jual ASC' at line 5
+#0 /Applications/MAMP/htdocs/e-kasir/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DATE_FOR...')
+#1 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 /Applications/MAMP/htdocs/e-kasir/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 /Applications/MAMP/htdocs/e-kasir/app/Models/getModel.php(248): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Laporan.php(64): App\Models\getModel->getLaporanBulananAll('2023')
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Laporan->get_laporan_bulanan()
+#6 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-21 13:13:31 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/e-kasir/system/Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/e-kasir/system/Model.php(834): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Laporan.php(63): CodeIgniter\Model->__call('getLaporanPenge...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Laporan->get_laporan_pengeluaran_harian()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-10-21 13:14:46 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/e-kasir/system/Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/e-kasir/system/Model.php(834): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/e-kasir/app/Controllers/Laporan.php(63): CodeIgniter\Model->__call('getLaporanPenge...', Array)
+#3 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(936): App\Controllers\Laporan->get_laporan_pengeluaran_harian()
+#4 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#5 /Applications/MAMP/htdocs/e-kasir/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-kasir/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}

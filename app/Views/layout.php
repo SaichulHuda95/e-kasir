@@ -177,7 +177,6 @@
     <script src="<?= base_url() ?>/assets/js/stisla.js"></script>
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/assets/js/scripts.js"></script>
-    <script src="<?= base_url() ?>/assets/js/custom.js"></script>
     <!-- SwweetAlert -->
     <script src="<?= base_url() ?>/assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
     <!-- autonumeric -->
@@ -232,7 +231,7 @@
                     container: 'position-absolute'
                 },
                 toast: true,
-                position: 'top-right'
+                position: 'bottom-right'
             })
         }
 
@@ -249,7 +248,7 @@
                     container: 'position-absolute'
                 },
                 toast: true,
-                position: 'top-right'
+                position: 'bottom-right'
             })
         }
 

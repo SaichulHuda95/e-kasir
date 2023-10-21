@@ -11,47 +11,99 @@ class Laporan extends BaseController
         $this->get = new getModel();
     }
 
-    public function harian()
+    public function index()
     {
         if (session()->get('logged_in') == FALSE) {
             return redirect()->to('/');
         }
         $session = $this->get->getSession();
         $data = [
-            'title' => 'Laporan Harian',
+            'title' => 'Rekap Laporan',
             'session' => $session,
         ];
-        return view('laporan/harian', $data);
+        return view('laporan/index', $data);
     }
 
-    function get_laporan_harian()
+    function pemasukan_harian()
+    {
+        $session = $this->get->getSession();
+        $data = [
+            'title' => 'Rekap Laporan',
+            'session' => $session,
+        ];
+        return view('laporan/pemasukan_harian', $data);
+    }
+
+    function pengeluaran_harian()
+    {
+        $session = $this->get->getSession();
+        $data = [
+            'title' => 'Rekap Laporan',
+            'session' => $session,
+        ];
+        return view('laporan/pengeluaran_harian', $data);
+    }
+
+    function pemasukan_bulanan()
+    {
+        $session = $this->get->getSession();
+        $data = [
+            'title' => 'Rekap Laporan',
+            'session' => $session,
+        ];
+        return view('laporan/pemasukan_bulanan', $data);
+    }
+
+    function pengeluaran_bulanan()
+    {
+        $session = $this->get->getSession();
+        $data = [
+            'title' => 'Rekap Laporan',
+            'session' => $session,
+        ];
+        return view('laporan/pengeluaran_bulanan', $data);
+    }
+
+    function get_laporan_pemasukan_harian()
     {
         $tgl_laporan = $this->request->getVar('tgl_laporan');
         if ($tgl_laporan == '') {
             $tgl_laporan = date('Y-m-d');
         }
-        $data = $this->get->getLaporanHarian($tgl_laporan);
+        $data = $this->get->getLaporanPemasukanHarian($tgl_laporan);
         echo json_encode($data);
     }
 
-    public function bulanan()
+    function get_laporan_pengeluaran_harian()
     {
-        $session = $this->get->getSession();
-        $data = [
-            'title' => 'Laporan Bulanan',
-            'session' => $session,
-        ];
-        return view('laporan/bulanan', $data);
+        $tgl_laporan = $this->request->getVar('tgl_laporan');
+        if ($tgl_laporan == '') {
+            $tgl_laporan = date('Y-m-d');
+        }
+        $data = $this->get->getLaporanPengeluaranHarian($tgl_laporan);
+        echo json_encode($data);
     }
 
-    function get_laporan_bulanan()
+    function get_laporan_pemasukan_bulanan()
     {
         $bln_laporan = $this->request->getVar('bln_laporan');
         $thn_laporan = $this->request->getVar('thn_laporan');
         if ($bln_laporan == 'all') {
-            $data = $this->get->getLaporanBulananAll($thn_laporan);
+            $data = $this->get->getLaporanPemasukanBulananAll($thn_laporan);
         } else {
-            $data = $this->get->getLaporanBulanan($bln_laporan, $thn_laporan);
+            $data = $this->get->getLaporanPemasukanBulanan($bln_laporan, $thn_laporan);
+        }
+        echo json_encode($data);
+    }
+
+    function get_laporan_pengeluaran_bulanan()
+    {
+        $bln_laporan = $this->request->getVar('bln_laporan');
+        $thn_laporan = $this->request->getVar('thn_laporan');
+        if ($bln_laporan == 'all') {
+            $data = $this->get->getLaporanPengeluaranBulananAll($thn_laporan);
+        } else {
+            $data = $this->get->getLaporanPengeluaranBulanan($bln_laporan, $thn_laporan);
         }
         echo json_encode($data);
     }
